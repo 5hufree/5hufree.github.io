@@ -26,7 +26,7 @@ body {
   min-height: 100vh;
   background: var(--backgroundColor);
 }
-button {
+a {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -41,7 +41,7 @@ button {
   font-family: inherit;
 }
 
-button.big-button {
+a.big-button {
    padding: 1em 2em;
    border: 2px solid var(--colorShadeA);
   border-radius: 1em;
@@ -49,7 +49,7 @@ button.big-button {
 transform-style: preserve-3d;
    transition: all 175ms cubic-bezier(0, 0, 1, 1);
 }
-button.big-button::before {
+a.big-button::before {
   position: absolute;
   content: '';
   width: 100%;
@@ -66,20 +66,20 @@ button.big-button::before {
 }
 
 
-button.big-button:hover {
+a.big-button:hover {
   background: var(--colorShadeD);
   transform: translate(0, 0.375em);
 }
 
-button.big-button:hover::before {
+a.big-button:hover::before {
   transform: translate3d(0, 0.75em, -1em);
 }
 
-button.big-button:active {
+a.big-button:active {
             transform: translate(0em, 0.75em);
 }
 
-button.big-button:active::before {
+a.big-button:active::before {
   transform: translate3d(0, 0, -1em);
   
       box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
@@ -87,6 +87,6 @@ button.big-button:active::before {
 }
 </style>
 
-<button class="big-button" onclick="location.href='https://forms.gle/yMpVHCNCuyVSSwFv8';">DAFTAR BARU</button>
+<a href="https://forms.gle/yMpVHCNCuyVSSwFv8" class="big-button">DAFTAR BARU</a>
 &nbsp &nbsp &nbsp &nbsp &nbsp 
-<button class="big-button" onclick="location.href='https://forms.gle/uYVG9TPZGccAh5Y96';">BAYAR CICILAN</button>
+<a href="https://forms.gle/uYVG9TPZGccAh5Y96" class="big-button">BAYAR CICILAN</a>
